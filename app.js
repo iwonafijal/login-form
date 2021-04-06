@@ -30,7 +30,8 @@ function animatedForm() {
 
 function validateUser(user) {
   if (user.value.length < 6) {
-    console.log("not enough characters");
+    // console.log("not enough characters");
+    window.alert("at least 6 characters required!");
     error("rgb(189, 87, 87)");
   } else {
     error("rgb(87, 189, 130)");
@@ -44,6 +45,7 @@ function validateEmail(email) {
     error("rgb(87, 189, 130)");
     return true;
   } else {
+    window.alert("incorrect format!");
     error("rgb(189, 87, 87)");
   }
 }
